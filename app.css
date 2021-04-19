@@ -19,6 +19,10 @@ h1 {
     /* border: 2px solid red; */
 }
 
+#seconds, #minutes, #hours {
+    font-size: 2em;
+}
+
 #timer {
     border: 10px solid yellow;
     margin: 5px auto;
