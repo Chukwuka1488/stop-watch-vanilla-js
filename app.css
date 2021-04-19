@@ -5,6 +5,11 @@ body {
 }
 h1 {
     color: #FFFFFF;
+    /* means the font is 2.5 times bigger than the normal font */
+    font-size: 2.5em;
+    /* defines the thickness; the value below is an extra light font weight  */
+    font-weight: 100;
+    /* text-transform: uppercase; */
 }
 
 .backdrop {
