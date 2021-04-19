@@ -22,8 +22,8 @@
         </header>
         <div id="timer">
             <div class="counter">
-                <div>
-                    <span id="seconds">00:</span><span id="minutes">00:</span><span id="hours">00</span>
+                <div id="display">
+                    00:00:00
                 </div>
                 <div class="time">
                     <span> &#128276;</span> <span>14.32</span>
@@ -31,18 +31,18 @@
             </div>
 
             <div class="btn">
-                <button id="btn-done">
+                <button id="done" onclick="done()">
                     Done
                 </button>
-                <button id="btn-start">
+                <button id="startPauseResume" onclick="startPauseResume()">
                     Start
                 </button>
-                <button id="btn-pause">
-                    Stop
+                <!-- <button id="btn-pause" onclick="pause()">
+                    Pause
                 </button>
-                <button id="btn-resume">
+                <button id="btn-resume" onclick="resume()">
                     Resume
-                </button>
+                </button> -->
             </div>
             <div class="d-sound">
                 <div class="sounds">
@@ -59,7 +59,7 @@
                 </div>
             </div>
     </main>
-    <script src="script.js"></script>
+    <script type="text/javascript" src="script.js"></script>
 </body>
 
 </html>

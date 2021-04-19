@@ -26,12 +26,9 @@ h1 {
     
 }
 
-#seconds, #minutes, #hours {
+#display {
     font-size: 3em;
-    /* min-height: 20em;
-    display: table-cell;
-    vertical-align: middle; */
-    
+
 }
 
 .counter {
@@ -57,6 +54,8 @@ h1 {
     padding: 0.5em;
 }
 
+
+
 button {
     width: 5em;
     height: 5em;
@@ -79,7 +78,7 @@ button {
 
 }
 button:hover {
-    transition: 2s;
+    transition: 0.5s;
     background-color:#F4A261;
 }
 
