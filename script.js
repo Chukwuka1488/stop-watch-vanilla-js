@@ -6,6 +6,13 @@ let hours = 0;
 let displaySeconds = 0;
 let displayMinutes = 0;
 let displayHours = 0;
+
+//var to hold set interval function
+let interval = null;
+
+//Define status to hold stopwatch status
+let status = "stopped";
+
 // stopwatch function (logic to determine when to increment to the next level)
 function stopWatch() {
     seconds++;
@@ -19,7 +26,6 @@ function stopWatch() {
             hours++;
         }
     }
-
     //if seconds/minutes/hours are only one digit, add a leading 0
     if (seconds < 10) {
         displaySeconds = "0" + seconds.toString();
@@ -36,10 +42,23 @@ function stopWatch() {
     } else {
         displayHours = hours;
     }
+    //Display updated time values to user
 
-    // display update time values to user
     document.getElementById("display").innerHTML =
         displayHours + ":" + displayMinutes + ":" + displaySeconds;
 }
 
 window.setInterval(stopWatch, 1000);
+
+function start() {
+    if (status === "stopped") {
+        // start the stopwatch by calling the setInterval() function
+        interval = window.setInterval(done, 1000);
+        document.getElementById("btn-start").innerHTML = "Pause";
+        status = "started";
+    } else {
+        window.clearInterval(interval);
+        document.getElementById("btn-pause").innerHTML = "Start";
+        status = "paused";
+    }
+}

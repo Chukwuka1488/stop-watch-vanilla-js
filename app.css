@@ -26,12 +26,9 @@ h1 {
     
 }
 
-#seconds, #minutes, #hours {
+#display {
     font-size: 3em;
-    /* min-height: 20em;
-    display: table-cell;
-    vertical-align: middle; */
-    
+
 }
 
 .counter {
@@ -56,6 +53,8 @@ h1 {
     text-align: center;
     padding: 0.5em;
 }
+
+
 
 button {
     width: 5em;
