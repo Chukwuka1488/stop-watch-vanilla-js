@@ -20,9 +20,26 @@ function stopWatch() {
         }
     }
 
+    //if seconds/minutes/hours are only one digit, add a leading 0
+    if (seconds < 10) {
+        displaySeconds = "0" + seconds.toString();
+    } else {
+        displaySeconds = seconds;
+    }
+    if (minutes < 10) {
+        displayMinutes = "0" + minutes.toString();
+    } else {
+        displayMinutes = minutes;
+    }
+    if (hours < 10) {
+        displayHours = "0" + hours.toString();
+    } else {
+        displayHours = hours;
+    }
+
     // display update time values to user
     document.getElementById("display").innerHTML =
-        hours + ":" + minutes + ":" + seconds;
+        displayHours + ":" + displayMinutes + ":" + displaySeconds;
 }
 
 window.setInterval(stopWatch, 1000);
