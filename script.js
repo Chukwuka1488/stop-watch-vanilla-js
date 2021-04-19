@@ -48,17 +48,25 @@ function stopWatch() {
         displayHours + ":" + displayMinutes + ":" + displaySeconds;
 }
 
-window.setInterval(stopWatch, 1000);
-
-function start() {
+function startPauseResume() {
     if (status === "stopped") {
         // start the stopwatch by calling the setInterval() function
-        interval = window.setInterval(done, 1000);
-        document.getElementById("btn-start").innerHTML = "Pause";
+        interval = window.setInterval(stopWatch, 1000);
+        document.getElementById("startPauseResume").innerHTML = "Pause";
         status = "started";
     } else {
         window.clearInterval(interval);
-        document.getElementById("btn-pause").innerHTML = "Start";
-        status = "paused";
+        document.getElementById("startPauseResume").innerHTML = "Resume";
+        status = "stopped";
     }
+}
+
+function done() {
+    window.clearInterval(interval);
+    seconds = 0;
+    minutes = 0;
+    hours = 0;
+    document.getElementById("display").innerHTML = "00:00:00";
+    document.getElementById("startPauseResume").innerHTML = "Start";
+    status = "stopped";
 }
