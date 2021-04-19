@@ -1,37 +1,111 @@
-.backdrop {
-    background-color: grey;
-    width: 80%;
-    width: 80%;
-    margin: 5% auto;
-    padding: auto;
+body {
+    background-color: rgb(10, 10, 5);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    height: 100%;
 }
 
-#timer {
-    border: 10px solid yellow;
-    margin: 5px auto;
-    width: 200px;
-    height: 200px;
-    /* border-radius: 50%; */
+header {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    color: #FFFFFF;
+    /* means the font is 2.5 times bigger than the normal font */
+    font-size: 2.5em;
+    /* defines the thickness; the value below is an extra light font weight  */
+    font-weight: 100;
+    /* text-transform: uppercase; */
+}
+
+.backdrop {
+    width: 800px;
+    color: #e5e5e5;
+    margin: 30px auto;
+    
+}
+
+#seconds, #minutes, #hours {
+    font-size: 3em;
+    /* min-height: 20em;
+    display: table-cell;
+    vertical-align: middle; */
+    
+}
+
+.counter {
+    border: 10px solid #E9C46A;
+    width: 20em;
+    height: 20em;
+    border-radius: 50%;
+    margin: auto;
+    text-align: center;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
     align-items: center;
+    flex-direction: column; 
 }
 
 .time {
-    border: 1px solid red;
-    margin: auto;
-    width: 80%;
-    height: 10%;
-    display: flex;
-    align-items: center;
-    /* align-content: center; */
+    font-size: 1.2em;
+    /* border: 1px solid yellow; */
+    margin: 0.5em auto;
+    width: 10em;
+    text-align: center;
+    padding: 0.5em;
 }
 
+button {
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+    background-color: #14213D;
+    color: #E5E5E5;
+    border: 1px solid white;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1.2em;
+    padding: 10px;
+    margin: 10px;
+    outline: none; 
+}
 .btn {
-    border: 1px solid blue;
-    margin: auto;
-    width: 80%;
-    height: 10%;
+  
     display: flex;
-    align-items: center;
-    /* align-content: center; */
+    justify-content: space-evenly;
+    margin: 0.5em auto;
+
+}
+button:hover {
+    transition: 2s;
+    background-color:#F4A261;
+}
+
+label {
+   color: #F4A261;
+}
+
+#alarms {
+    color: green;
+    width: 5em;
+    height: 2em;
+}
+.d-sound {
+    display: flex;
+    justify-content: center;
+    
+}
+.sounds {
+    display: flex;
+    justify-content: space-between;
+    border: 0.2em solid #E5E5E5;
+    width: 80%;
+    font-size: 1.2em;
+    padding: 0.6em;
+    margin: 0.25em auto;
+    border-radius: .75em;
+
 }
 

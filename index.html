@@ -21,13 +21,16 @@
             <h1>CountDown Timer</h1>
         </header>
         <div id="timer">
-            <div>
-                <span id="seconds">00</span>:<span id="minutes">00</span>:<span id="hours">00</span>
+            <div class="counter">
+                <div>
+                    <span id="seconds">00:</span><span id="minutes">00:</span><span id="hours">00</span>
+                </div>
+                <div class="time">
+                    <span> &#128276;</span> <span>14.32</span>
+                </div>
             </div>
-            <div class="time">
-                <span> &#128276;</span> <span>14.32</span>
-            </div>
-            <div>
+
+            <div class="btn">
                 <button id="btn-done">
                     Done
                 </button>
@@ -41,13 +44,19 @@
                     Resume
                 </button>
             </div>
-            <div>
-                <label for="alarms">When Timer Ends</label>
-                <select name="alarms" id="alarms">
-                    <option value="beep">Beep</option>
-                    <option value="ping">Ping</option>
-                    <option value="baby">Baby</option>
-                </select>
+            <div class="d-sound">
+                <div class="sounds">
+                    <div>
+                        <label for="alarms">When Timer Ends</label>
+                    </div>
+                    <div>
+                        <select name="alarms" id="alarms">
+                            <option value="beep">Beep</option>
+                            <option value="ping">Ping</option>
+                            <option value="baby">Baby</option>
+                        </select>
+                    </div>
+                </div>
             </div>
     </main>
     <script src="script.js"></script>
