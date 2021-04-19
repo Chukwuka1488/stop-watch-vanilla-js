@@ -3,6 +3,13 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     height: 100%;
 }
+
+header {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+}
+
 h1 {
     color: #FFFFFF;
     /* means the font is 2.5 times bigger than the normal font */
@@ -16,7 +23,7 @@ h1 {
     width: 800px;
     color: #e5e5e5;
     margin: 30px auto;
-    border: 2px solid red;
+    
 }
 
 #seconds, #minutes, #hours {
@@ -50,14 +57,6 @@ h1 {
     padding: 0.5em;
 }
 
-#timer {
-    /* margin: auto;
-    display: flex;
-    border: 1px solid green;
-    justify-content: center;
-    align-items: center;
-    text-align: center; */
-}
 button {
     width: 5em;
     height: 5em;
@@ -71,6 +70,13 @@ button {
     padding: 10px;
     margin: 10px;
     outline: none; 
+}
+.btn {
+  
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0.5em auto;
+
 }
 button:hover {
     transition: 2s;
@@ -86,8 +92,20 @@ label {
     width: 5em;
     height: 2em;
 }
-
+.d-sound {
+    display: flex;
+    justify-content: center;
+    
+}
 .sounds {
     display: flex;
+    justify-content: space-between;
+    border: 0.2em solid #E5E5E5;
+    width: 80%;
+    font-size: 1.2em;
+    padding: 0.6em;
+    margin: 0.25em auto;
+    border-radius: .75em;
+
 }
 
