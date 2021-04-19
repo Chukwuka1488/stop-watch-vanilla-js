@@ -16,13 +16,48 @@ h1 {
     width: 800px;
     color: #e5e5e5;
     margin: 30px auto;
-    /* border: 2px solid red; */
+    border: 2px solid red;
 }
 
 #seconds, #minutes, #hours {
-    font-size: 2em;
+    font-size: 3em;
+    /* min-height: 20em;
+    display: table-cell;
+    vertical-align: middle; */
+    
 }
 
+.counter {
+    border: 10px solid #E9C46A;
+    width: 20em;
+    height: 20em;
+    border-radius: 50%;
+    margin: auto;
+    text-align: center;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+
+.time {
+    font-size: 1.2em;
+    /* border: 1px solid yellow; */
+    margin: 0.5em auto;
+    width: 10em;
+    text-align: center;
+    padding: 0.5em;
+}
+
+#timer {
+    /* margin: auto;
+    display: flex;
+    border: 1px solid green;
+    justify-content: center;
+    align-items: center;
+    text-align: center; */
+}
 button {
     width: 5em;
     height: 5em;
@@ -40,10 +75,6 @@ button {
 button:hover {
     transition: 2s;
     background-color:#F4A261;
-}
-.time {
-    font-size: 1.2em;
-   
 }
 
 label {
