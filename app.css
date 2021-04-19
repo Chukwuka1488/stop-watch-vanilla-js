@@ -4,8 +4,16 @@ body {
     height: 100%;
 }
 h1 {
-    color: whitesmoke;
+    color: #FFFFFF;
 }
+
+.backdrop {
+    width: 800px;
+    color: #e5e5e5;
+    margin: 30px auto;
+    /* border: 2px solid red; */
+}
+
 #timer {
     border: 10px solid yellow;
     margin: 5px auto;
