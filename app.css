@@ -1,0 +1,37 @@
+.backdrop {
+    background-color: grey;
+    width: 80%;
+    width: 80%;
+    margin: 5% auto;
+    padding: auto;
+}
+
+#timer {
+    border: 10px solid yellow;
+    margin: 5px auto;
+    width: 200px;
+    height: 200px;
+    /* border-radius: 50%; */
+    align-items: center;
+}
+
+.time {
+    border: 1px solid red;
+    margin: auto;
+    width: 80%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    /* align-content: center; */
+}
+
+.btn {
+    border: 1px solid blue;
+    margin: auto;
+    width: 80%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    /* align-content: center; */
+}
+
