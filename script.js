@@ -17,40 +17,15 @@ startTimer = null;
 buttonStart.addEventListener("click", function () {
     console.log("Start");
 });
-// window.onload = function () {
-//     var seconds = 00;
-//     var minutes = 00;
-//     var hours = 00;
 
-//     var Interval;
-//
-//     buttonStop.onclick = function () {
-//         clearInterval(Interval);
-//     };
-//     buttonDone.onclick = function () {
-//         clearInterval(Interval);
-//         hours = "00";
-//         minutes = "00";
-//         seconds = "00";
-//         appendHours.innerHTML = hours;
-//         appendMinutes.innerHTML = minutes;
-//         appendSeconds.innerHTML = seconds;
-//     };
+buttonDone.addEventListener("click", function () {
+    console.log("Done");
+});
 
-//     function startTimer() {
-//         seconds++;
-//         if (seconds <= 59) {
-//             appendMinutes.innerHTML = seconds;
-//         }
-//         if (seconds > 59) {
-//             console.log("minutes");
-//             minutes++;
-//             appendMinutes.innerHTML = "0" + minutes;
-//             seconds = 0;
-//             appendSeconds.innerHTML = "0" + 0;
-//         }
-//         if (minutes > 59) {
-//             appendMinutes.innerHTML = minutes;
-//         }
-//     }
-// };
+buttonPause.addEventListener("click", function () {
+    console.log("Pause");
+});
+
+buttonResume.addEventListener("click", function () {
+    console.log("Resume");
+});
