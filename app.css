@@ -39,16 +39,24 @@ button {
 }
 button:hover {
     transition: 2s;
-    background-color:#E76F51;
+    background-color:#F4A261;
 }
 .time {
     font-size: 1.2em;
    
 }
 
-.time {
-   
+label {
+   color: #F4A261;
 }
 
+#alarms {
+    color: green;
+    width: 5em;
+    height: 2em;
+}
 
+.sounds {
+    display: flex;
+}
 
