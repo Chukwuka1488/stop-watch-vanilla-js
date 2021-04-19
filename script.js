@@ -1,31 +1,28 @@
-var buttonDone = document.getElementById("btn-done");
-var buttonStart = document.getElementById("btn-start");
-var buttonPause = document.getElementById("btn-pause");
-var buttonResume = document.getElementById("btn-resume");
+let seconds = 0;
+let minutes = 0;
+let hours = 0;
 
-var appendHours = document.getElementById("hours");
-var appendMinutes = document.getElementById("minutes");
-var appendSeconds = document.getElementById("seconds");
+//define vars to hold display value
+let displaySeconds = 0;
+let displayMinutes = 0;
+let displayHours = 0;
+// stopwatch function (logic to determine when to increment to the next level)
+function stopWatch() {
+    seconds++;
 
-// store a reference to the variable
-startTimer = null;
+    // logic to determine when to increment next value
+    if (seconds / 60 === 1) {
+        seconds = 0;
+        minutes++;
+        if (minutes / 60 === 1) {
+            minutes = 0;
+            hours++;
+        }
+    }
 
-// function timer() {
+    // display update time values to user
+    document.getElementById("display").innerHTML =
+        hours + ":" + minutes + ":" + seconds;
+}
 
-// }
-
-buttonStart.addEventListener("click", function () {
-    console.log("Start");
-});
-
-buttonDone.addEventListener("click", function () {
-    console.log("Done");
-});
-
-buttonPause.addEventListener("click", function () {
-    console.log("Pause");
-});
-
-buttonResume.addEventListener("click", function () {
-    console.log("Resume");
-});
+window.setInterval(stopWatch, 1000);
